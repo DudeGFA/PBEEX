@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | PBEEX</title>
+    <link rel="icon" type="image/svg" href="logo/circular_colored.svg">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <img src="logo/horizontal_white.png" alt="">
+        </div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="apply.html">Apply</a>
+            <a href="partners.html">Partners</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <section id="apply-page">
+        <h1>Apply to PBEEX</h1>
+        <div class="apply-info">
+            <p>Join us in our mission to empower engineering students and foster innovation. Fill out the application form below to get involved with the Professor O.A. Bamiro Engineering Expo.</p>
+            <p>We welcome applications for participation in the expo, sponsorship opportunities, and partnerships.</p>
+        </div>
+        <form id="application-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="participant">Participant</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="sponsor">Sponsor</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
